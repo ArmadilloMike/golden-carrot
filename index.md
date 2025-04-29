@@ -1,4 +1,7 @@
 ---
+title: Home
 ---
 
-# tonic-starter
+# golden-carrot
+
+*golden carrot* is a jekkyl theme that is shiny and pixelated
