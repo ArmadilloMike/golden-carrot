@@ -1,5 +1,5 @@
-title: tonic-starter
-description: ""
+title: golden-carrot
+description: "A simple yellow theme for Jekyll"
 encoding: utf-8
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
