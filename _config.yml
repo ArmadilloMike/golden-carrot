@@ -1,5 +1,5 @@
-title: golden-carrot
-description: "A simple yellow theme for Jekyll"
+title: vs-code-jekkyl
+description: "A jekkyl theme that makes your page look like vscode"
 encoding: utf-8
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]

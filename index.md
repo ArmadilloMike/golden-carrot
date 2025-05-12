@@ -3,6 +3,6 @@ title: Home
 layout: default
 ---
 
-# golden-carrot
+# vs-code-jekkyl
 
-*golden carrot* is a jekkyl theme that is modern and sleek with yellow vibe to it
+*vs-code-jekkyl* is a jekkyl theme that is made to look like VS Code
