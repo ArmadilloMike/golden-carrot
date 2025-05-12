@@ -1,6 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     {% include head.html %}
     <body>
-        {{ content }}
+        <div class="vscode-container">
+            <div class="sidebar">
+                <h3>Explorer</h3>
+                <ul class="file-explorer">
+                    {% for page in site.pages %}
+                        {% if page.path contains '.md' %}
+                            <li>
+                                <a href="{{ page.url | relative_url }}">
+                                    <span class="file-icon">📄</span> <!-- Optional icon -->
+                                    {{ page.title | default: page.path | split: '/' | last | replace: '.md', '' }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="top-bar">
+                <div class="container">
+                    <form class="search-form" action="/search" method="get">
+                        <input type="text" name="q" placeholder={{ page.path | default: page.path | split: '/' | last }} class="search-input">
+                    </form>
+                </div>
+            </div>
+            <div class="editor">
+            {{ content }}
+            </div>
+            <div class="status-bar">
+                <p>Status: Ready</p>
+            </div>
+        </div>
     </body>
 </html>
